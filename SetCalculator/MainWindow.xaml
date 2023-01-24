@@ -1,0 +1,154 @@
+﻿<Window x:Class="SetCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SetCalculator"
+        mc:Ignorable="d"
+        Title="Set Calculator" 
+        Height="600" Width="1000" 
+        ResizeMode="NoResize">
+    <Grid x:Name="gridMain">
+        <Image 
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Height="638" Width="1113" 
+            Margin="0,-35,-119.4,-32.6" 
+            RenderTransformOrigin="0.15,0.431" 
+            Source="back.jpg">
+            <Image.Effect>
+                <BlurEffect Radius="10"/>
+            </Image.Effect>
+        </Image>
+        <TextBox
+            x:Name="expression"
+            Width="465" Height="310" 
+            Margin="20, 60, 0, 0" 
+            TextWrapping="Wrap" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            FontSize="22"
+            Foreground="White"
+            VerticalScrollBarVisibility="Auto" 
+            AutomationProperties.IsColumnHeader="True" 
+            IsManipulationEnabled="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.1"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox 
+            x:Name="arguments" 
+            Width="465" Height="310" 
+            Margin="515, 60, 0, 0" 
+            TextWrapping="Wrap"  
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            FontSize="22"
+            Foreground="White"
+            AcceptsReturn="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.1"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox
+            x:Name="universum"
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Height="70" Width="465"
+            Margin="515,390,0,0" 
+            TextWrapping="Wrap"
+            FontSize="22"
+            Foreground="White"
+            AcceptsReturn="True" Padding="10,16,0,0">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button
+            x:Name="getResult" 
+            Content="Result" 
+            Width="465" Height="70" 
+            Margin="20, 390, 0, 0" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Click="GetResult" 
+            FontSize="36" Foreground="LightCyan"
+            FontFamily="Yu Gothic UI" 
+            FontWeight="Bold" 
+            RenderTransformOrigin="0.5,0.5">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <SolidColorBrush Color="BlueViolet" Opacity="0.2"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <SolidColorBrush Color="LightBlue" Opacity="0.2"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <SolidColorBrush Color="LightCyan" Opacity="0.2"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <TextBlock 
+            x:Name="result" 
+            Width="960" Height="80"  
+            Margin="20, 480, 0, 0" 
+            TextWrapping="Wrap" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            RenderTransformOrigin="0.5,0.5" 
+            IsEnabled="False" 
+            FontSize="24"
+            Foreground="White">
+            <Run/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Label 
+            x:Name="argumentsLabel" 
+            Content="Задаваемые множества" 
+            Width="465" Height="40" 
+            Margin="515, 10, 0, 0"  
+            HorizontalAlignment="Left" VerticalAlignment="Top" 
+            FontSize="24"
+            FontWeight="Bold"
+            Padding="5,5,5,4" 
+            BorderThickness="50,0,10,0" 
+            IsEnabled="False" 
+            Foreground="White"/>
+        <Label 
+            x:Name="expressionLabel" 
+            Content="Выражение" 
+            Width="465" Height="40" 
+            Margin="20,10,0,0" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            FontSize="23" 
+            FontWeight="Bold"
+            BorderThickness="50,0,10,0" 
+            IsEnabled="False" 
+            Foreground="White">
+        </Label>
+    </Grid>
+</Window>

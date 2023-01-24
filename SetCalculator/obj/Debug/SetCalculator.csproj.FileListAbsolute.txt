@@ -1,0 +1,15 @@
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\bin\Debug\SetCalculator.exe.config
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\bin\Debug\SetCalculator.exe
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\bin\Debug\SetCalculator.pdb
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator.csprojAssemblyReference.cache
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\MainWindow.g.cs
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\App.g.cs
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator_MarkupCompile.cache
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator_MarkupCompile.lref
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\MainWindow.baml
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator.g.resources
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator.Properties.Resources.resources
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator.csproj.GenerateResource.cache
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator.csproj.CoreCompileInputs.cache
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator.exe
+C:\RepositoryForCSharp\SetCalculator\SetCalculator\obj\Debug\SetCalculator.pdb
